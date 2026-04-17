@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Rime cache files
+*.bin
+*.prism.bin
+
+# Build artifacts
+*.pyc
+__pycache__/
+
+# Logs
+*.log
