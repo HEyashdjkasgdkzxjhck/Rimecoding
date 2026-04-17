@@ -1,135 +1,149 @@
 # RimeCoding 输入法词库
 
-🤖 自动化构建 | 📚 持续更新 | 🌏 开源共享
+[English](README_EN.md) | 简体中文
 
-一个用于 Rime 输入法的中英文自动翻译词库，支持输入中文自动转换为对应的英文术语。
+<p align="center">
+  <img src="https://img.shields.io/badge/词条数-9655+-green.svg" alt="词条数">
+  <img src="https://img.shields.io/badge/UE%20Blueprint-7000+-blue.svg" alt="UE词条">
+  <img src="https://img.shields.io/github/license/HEyashdjkasgdkzxjhck/Rimecoding" alt="License">
+</p>
 
-## 词库规模
-
-- **总词条数**: 9655+
-- **分类词库**: UE Blueprint (7000+) / 通用 CS / 机器学习 / 日常词汇
+🤖 输入中文 → 按 Tab 键 → 自动转换为英文术语
 
 ## 功能特点
 
-- **Tab 键翻译**: 输入中文后按 Tab 键自动转换为英文
-- **智能提示**: 自动显示英文候选词
-- **持续更新**: 社区驱动的词库扩充
+- **Tab 键翻译** - 输入中文后按 Tab 键即时转换为英文
+- **智能提示** - 自动显示英文候选词
+- **持续更新** - 社区驱动，词库不断扩充
+- **多领域覆盖** - UE Blueprint / 机器学习 / 编程术语
+
+## 词库规模
+
+| 分类 | 词条数 |
+|------|--------|
+| UE Blueprint 术语 | 7000+ |
+| 计算机通用词汇 | 1700+ |
+| 机器学习术语 | 500+ |
+| **总计** | **9655+** |
 
 ## 支持领域
 
-- 🎮 Unreal Engine 蓝图开发
-- 🤖 机器学习 / 深度学习
-- 💻 编程术语
-- 📝 通用计算机词汇
+<p align="center">
+  🎮 Unreal Engine Blueprint &nbsp;|&nbsp; 🤖 机器学习 &nbsp;|&nbsp; 💻 编程术语
+</p>
 
 ## 快速开始
 
-### 1. 安装 Rime
+### 1. 安装 Rime 引擎
 
-推荐使用 [小狼毫 Weasel](https://github.com/rime/weasel) 或其他 Rime 引擎发行版
+推荐使用 [小狼毫 Weasel](https://github.com/rime/weasel)（Windows）或 [鼠须管](https://github.com/rime/squirrel)（macOS）
 
 ### 2. 下载词库
 
 ```bash
-git clone https://github.com/yourusername/rimecoding.git
+git clone https://github.com/HEyashdjkasgdkzxjhck/Rimecoding.git
 ```
 
-### 3. 部署
+### 3. 部署文件
 
 复制以下文件到 Rime 配置目录：
 
-- `rimecoding.schema.yaml` → schema 文件
-- `rimecoding_dict.lua` → 词典文件
-- `rimecoding_processor.lua` → 处理器
-- `rimecoding_translator.lua` → 翻译器
+| 文件 | 说明 |
+|------|------|
+| `lua/rimecoding.lua` | 主词库（9655+ 词条） |
+| `rimecoding.schema.yaml` | 输入方案 |
+| `rimecoding_translator.lua` | 翻译器 |
+| `rimecoding_processor.lua` | Tab 键处理器 |
 
-Windows 配置目录: `%APPDATA%\Rime\`
-macOS: `~/Library/Rime/`
-Linux: `~/.config/ibus/rime/` 或 `~/.rime/`
+**配置文件目录：**
+- Windows: `%APPDATA%\Rime\`
+- macOS: `~/Library/Rime/`
+- Linux: `~/.config/ibus/rime/` 或 `~/.rime/`
 
 ### 4. 重新部署
 
-右键点击输入法图标 → 重新部署
+右键点击输入法图标 → **重新部署**
 
 ## 使用方法
 
-1. 输入中文（如 `蓝图`）
-2. 按 **Tab** 键翻译为英文（`Blueprint`）
-3. 或等待自动出现英文候选词
+### 输入示例
+
+| 输入 | 按键 | 输出 |
+|------|------|------|
+| `lantuhui` | Tab | `Blueprint` |
+| `huoqvwActor` | Tab | `GetActor` |
+| `shezhiweizhi` | Tab | `SetLocation` |
+| `pengzhuangjiance` | Tab | `CollisionDetection` |
+
+### 常用 UE 术语
+
+```
+蓝图 → Blueprint
+获取位置 → GetLocation
+设置旋转 → SetRotation
+创建组件 → CreateComponent
+销毁Actor → DestroyActor
+碰撞检测 → CollisionDetection
+骨骼网格体 → SkeletalMesh
+动画蓝图 → AnimInstance
+行为树 → BehaviorTree
+相机组件 → CameraComponent
+```
 
 ## 贡献词条
 
-我们欢迎社区贡献！
+欢迎社区贡献！🎉
 
-### 贡献方式
+### 方式一：提交 Issue
 
-#### 方式一: 提交 Issue
-在 [GitHub Issues](https://github.com/yourusername/rimecoding/issues) 中报告缺失的词条
+在 [Issues](https://github.com/HEyashdjkasgdkzxjhck/Rimecoding/issues) 中报告缺失的词条
 
-#### 方式二: 提交 Pull Request
+### 方式二：提交 Pull Request
 
 1. Fork 本仓库
-2. 编辑 `lua/rimecoding.lua` 文件
+2. 编辑 `lua/rimecoding.lua`
 3. 提交 PR
 
 ### 词条格式
 
 ```lua
-["中文"] = "English",
+["中文词"] = "EnglishTerm",
 ```
 
-### 常用缩写
+### 贡献规范
 
-| 中文 | 英文 |
-|------|------|
-| 获取 | Get |
-| 设置 | Set |
-| 创建 | Create |
-| 销毁 | Destroy |
-| 添加 | Add |
-| 移除 | Remove |
-| 组件 | Component |
-| Actor | Actor |
-| 变换 | Transform |
-| 位置 | Location |
-| 旋转 | Rotation |
-| 缩放 | Scale |
-| 碰撞 | Collision |
+- 每行一个词条
+- 使用 UTF-8 编码
+- 英文术语使用 UE 官方拼写
+- 不要添加重复词条
 
-## 词库结构
+## 项目结构
 
 ```
-rimecoding/
+Rimecoding/
 ├── lua/
-│   └── rimecoding.lua      # 主词库文件
-├── schema/
-│   └── rimecoding.schema.yaml
-├── script/
-│   ├── merge_dicts.py      # 词库合并脚本
-│   └── ue_dict_generator.py # UE 词库生成器
-├── README.md
-└── CONTRIBUTING.md
+│   └── rimecoding.lua          # 主词库文件
+├── README.md                    # 本文件
+├── CONTRIBUTING.md              # 贡献指南
+└── LICENSE                      # MIT 许可证
 ```
 
-## 开发
+## 更新日志
 
-### 生成 UE 词库
+### v1.7 (2026-04-17)
+- 词条总数：9655+
+- UE Blueprint 词库：7000+
+- 基于 UE 命名规范自动生成
 
-```bash
-python script/ue_dict_generator.py
-```
-
-### 合并词库
-
-```bash
-python script/merge_dicts.py
-```
-
-## License
-
-MIT License
+### v1.4 (2026-04-16)
+- 词条总数：2590
+- 合并 cs-dict 专业词库
 
 ## 致谢
 
 - [Rime 输入法](https://rime.im/) - 强大的开源输入法引擎
 - [Unreal Engine 文档](https://docs.unrealengine.com/) - UE API 参考
+
+## License
+
+MIT License - 欢迎自由使用和分享
