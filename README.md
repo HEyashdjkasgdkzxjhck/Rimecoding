@@ -147,3 +147,8 @@ Rimecoding/
 ## License
 
 MIT License - 欢迎自由使用和分享
+
+
+#请我喝瓶可乐
+<img width="828" height="1124" alt="image" src="https://github.com/user-attachments/assets/9fca5569-58e0-43f0-9c78-bad79b78f790" />
+
