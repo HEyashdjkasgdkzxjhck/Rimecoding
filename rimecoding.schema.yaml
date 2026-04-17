@@ -1,0 +1,55 @@
+# Rime schema - 基于 luna_pinyin
+schema:
+  schema_id: rimecoding
+  name: RimeCoding
+  version: "1.0"
+
+engine:
+  processors:
+    - lua_processor@rimecoding
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    __patch:
+      - pinyin:/abbreviation
+      - pinyin:/spelling_correction
+      - pinyin:/key_correction
+
+translator:
+  dictionary: luna_pinyin
+
+punctuator:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+
+simplifier:
+  option_name: simplification
+
+switches:
+  - name: simplification
+    states: [ 简体, 繁体 ]
+    reset: 1

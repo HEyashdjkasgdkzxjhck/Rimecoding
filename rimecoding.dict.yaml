@@ -1,0 +1,112 @@
+# Rime dictionary - RimeCoding v1.5
+# encoding: utf-8
+
+---
+name: rimecoding
+version: "1.5"
+sort: by_weight
+
+# UE Blueprint basics
+chuangjian    创建
+xiaohui    销毁
+shanchu    删除
+yichu    移除
+tianjia    添加
+huoqu    获取
+shezhi    设置
+gengxin    更新
+lanhuo    蓝图
+zujian    组件
+wanjia    玩家
+juese    角色
+wuti    物体
+yingyong    应用
+fuzhi    复制
+yinyong    引用
+chongfu    重复
+tiaojian    条件
+yunxing    运行
+zhongzhi    终止
+
+# Actor
+kongjian    空间
+weizhi    位置
+xuanzhuan    旋转
+suofang    缩放
+fangxiang    方向
+sudu    速度
+jiakuai    加快
+jiangdi    降低
+tingzhi    停止
+jiazai    加载
+baocun    保存
+daoru    导入
+daochu    导出
+
+# Types
+bu    布尔
+szhi    数值
+xl    向量
+uxl    旋转
+wben    文本
+zl    阵列
+zd    字典
+jd    结构体
+dx    对象
+
+# Flow
+ruguo    如果
+fouze    否则
+jiansuo    简索
+xunhuan    循环
+meici    每次
+zhongyu    终于
+tuichu    退出
+tiaoguo    跳过
+
+# Functions
+hanshu    函数
+guocheng    过程
+shijian    事件
+zhixing    执行
+diaoyong    调用
+fanhui    返回
+
+# Physics
+zhongli    重力
+zhuangji    撞击
+moca    摩擦
+sulv    速率
+jiaodu    角度
+juli    距离
+
+# Animation
+donghua    动画
+jinzhan    浸入
+chongzhi    重置
+bofang    播放
+zanting    暂停
+jieshu    结束
+
+# UI
+anni    按钮
+wendang    文本框
+tupian    图片
+jindutiao    进度条
+
+# Effects
+texiao    特效
+lizi    粒子
+guangxian    光线
+yinse    音色
+
+# Events
+anzhu    按住
+shifang    释放
+chumo    触碰
+lianxu    连续
+danji    单击
+shuangji    双击
+shuru    输入
+shuchu    输出
+kaishi    开始
