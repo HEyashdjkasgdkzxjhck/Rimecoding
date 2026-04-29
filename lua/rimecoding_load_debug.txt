@@ -1,0 +1,35 @@
+2026-04-29 15:15:08	require success: dict_common count=0
+2026-04-29 15:15:08	require success: dict_core count=57
+2026-04-29 15:15:08	require success: dict_ue count=45
+2026-04-29 15:15:08	require success: dict_project count=9
+2026-04-29 15:17:38	require success: dict_common count=0
+2026-04-29 15:17:38	require success: dict_core count=57
+2026-04-29 15:17:38	require success: dict_ue count=45
+2026-04-29 15:17:38	require success: dict_project count=9
+2026-04-29 15:17:38	merged dict count=111
+2026-04-29 15:17:38	test 打开关卡=OpenLevel
+2026-04-29 15:17:38	test 加载关卡=LoadLevel
+2026-04-29 15:17:38	test 获取组件=GetComponent
+2026-04-29 15:17:38	test 蓝莓=Blueberry
+2026-04-29 15:17:38	dict_keys count=111
+2026-04-29 15:17:55	tab input=关卡 | translated=关卡
+2026-04-29 15:17:55	tab pressed but no candidate text
+2026-04-29 15:17:59	tab input=打开关卡 | translated=打开关卡
+2026-04-29 15:17:59	tab pressed but no candidate text
+2026-04-29 15:18:47	tab pressed but no candidate text
+2026-04-29 15:19:19	require success: dict_common count=0
+2026-04-29 15:19:19	require success: dict_core count=57
+2026-04-29 15:19:19	require success: dict_ue count=45
+2026-04-29 15:19:19	require success: dict_project count=9
+2026-04-29 15:19:19	merged dict count=111
+2026-04-29 15:19:19	test 打开关卡=OpenLevel
+2026-04-29 15:19:19	test 加载关卡=LoadLevel
+2026-04-29 15:19:19	test 获取组件=GetComponent
+2026-04-29 15:19:19	test 蓝莓=Blueberry
+2026-04-29 15:19:19	dict_keys count=111
+2026-04-29 15:19:43	tab input=打开关卡 | translated=OpenLevel
+2026-04-29 15:19:43	tab pressed but no candidate text
+2026-04-29 15:20:15	tab pressed but no candidate text
+2026-04-29 15:20:16	tab pressed but no candidate text
+2026-04-29 15:20:16	tab pressed but no candidate text
+2026-04-29 15:20:17	tab pressed but no candidate text
