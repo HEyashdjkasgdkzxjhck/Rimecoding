@@ -6,10 +6,10 @@ schema:
 
 engine:
   processors:
-    - lua_processor@rimecoding
     - ascii_composer
     - recognizer
     - key_binder
+    - lua_processor@rimecoding
     - speller
     - punctuator
     - selector
@@ -45,7 +45,13 @@ punctuator:
 
 recognizer:
   import_preset: default
-
+  
+key_binder:
+  bindings:
+    - { when: paging, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: has_menu, accept: plus, send: Page_Down }
+    
 simplifier:
   option_name: simplification
 
